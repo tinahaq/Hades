@@ -1,2 +1,2 @@
 # Hades
-A project about how great Hades is
+A fan website on Hades by Supergiant Games
