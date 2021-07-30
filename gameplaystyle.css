@@ -66,9 +66,24 @@ h1 {
     z-index: -1;
     border: 1px solid rgb(66, 0, 128);
     opacity: .7;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 .nyx:hover {
     opacity: 1;
+    z-index: 1;
+}
+@keyframes slide {
+
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: -15%;
+    }
 }
 
 @media (max-width: 900px) {    
@@ -76,6 +91,16 @@ h1 {
     position: fixed;
     right: -50%;
     height: 100%;
+    }
+    @keyframes slide {
+
+        0% {
+            right: -100%;
+        }
+    
+        100% {
+            right: -50%;
+        }
     }
 }
 
@@ -85,5 +110,15 @@ h1 {
     right: -75%;
     height: 100%;
     }
+
+    @keyframes slide {
+
+        0% {
+            right: -100%;
+        }
+    
+        100% {
+            right: -75%;
+        }
+    }
 }
-*/

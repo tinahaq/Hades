@@ -18,7 +18,7 @@ nav {
     top: 0;
     text-align: center;
     border-bottom: 1px solid firebrick;
-    z-index: 2;
+    z-index: 3;
 }
 
 li {
@@ -45,6 +45,8 @@ h1 {
     color: firebrick;
 }
 
+
+
 .zagreus {
     position: fixed;
     bottom: 0;
@@ -53,9 +55,25 @@ h1 {
     z-index: -1;
     border: 1px solid firebrick;
     opacity: .7;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 .zagreus:hover {
     opacity: 1;
+    z-index: 2;
+}
+
+@keyframes slide {
+
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: -15%;
+    }
 }
 
 
@@ -78,6 +96,17 @@ h1 {
     left: -50%;
     height: 100%;
     }
+
+    @keyframes slide {
+
+        0% {
+            left: -100%;
+        }
+    
+        100% {
+            left: -50%;
+        }
+    }
 }
 
 @media (max-width: 680px) {    
@@ -85,6 +114,17 @@ h1 {
     position: fixed;
     left: -75%;
     height: 100%;
+    }
+
+    @keyframes slide {
+
+        0% {
+            left: -100%;
+        }
+    
+        100% {
+            left: -75%;
+        }
     }
 }
 

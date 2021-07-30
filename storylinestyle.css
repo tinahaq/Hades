@@ -52,9 +52,14 @@ h1 {
     height: 100%;
     z-index: -1;
     opacity: .7;
+    animation-name: slide-left;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 .megaera:hover {
     opacity: 1;
+    z-index: 1;
 }
 
 .thanatos {
@@ -64,10 +69,37 @@ h1 {
     height: 100%;
     z-index: -1;
     opacity: .7;
+    animation-name: slide-right;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 .thanatos:hover {
-    opacity: 1;
+    opacity: 1; 
+    z-index: 1;
+}
+
+@keyframes slide-right {
+
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: -15%;
+    }
+}
+
+@keyframes slide-left {
+
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: -10%;
+    }
 }
 
 .storyline {
