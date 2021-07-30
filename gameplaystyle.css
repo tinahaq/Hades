@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 3%);
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    border-bottom: 1px solid firebrick;
+    z-index: 2;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: firebrick;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    opacity: 0.6;
+
+}
+
+li a:hover {
+    border: 1px solid firebrick;
+    background-color: hsl(0, 68%, 15%);
+    opacity: 1;
+}
+
+h1 {
+    color: firebrick;
+}
+
+.gameplay {
+    position: fixed;
+    top: 5vh;
+    left: 0;
+    color: firebrick;
+    border: 1px solid firebrick;
+    background-color: hsl(0, 68%, 15%);
+    width: 45%;
+    padding: 10px;
+    text-align: start;
+    z-index: 1;
+}
+
+.nyx {
+    position: fixed;
+    bottom: 0;
+    right: -15%;
+    height: 100%;
+    z-index: -1;
+    border: 1px solid firebrick;
+    opacity: .7;
+}
+.nyx:hover {
+    opacity: 1;
+}
+
+@media (max-width: 900px) {    
+    .nyx {
+    position: fixed;
+    right: -50%;
+    height: 100%;
+    }
+}
+
+@media (max-width: 680px) {    
+    .nyx {
+    position: fixed;
+    right: -75%;
+    height: 100%;
+    }
+}
+*/
