@@ -62,7 +62,6 @@ h1 {
 }
 .zagreus:hover {
     opacity: 1;
-    z-index: 2;
 }
 
 @keyframes slide {
@@ -90,11 +89,20 @@ h1 {
     z-index: 1;
 }
 
+.intro:hover {
+    z-index: 2;
+}
+
 @media (max-width: 900px) {    
     .zagreus {
     position: fixed;
     left: -50%;
     height: 100%;
+    }
+
+    .intro {
+        height: 100%;
+        overflow: scroll;
     }
 
     @keyframes slide {
