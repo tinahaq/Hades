@@ -45,6 +45,17 @@ h1 {
     color: firebrick;
 }
 
+footer {
+    color: firebrick;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    text-align: start;
+    border-top: 1px solid firebrick;
+    background-color: hsl(0, 68%, 15%);
+    z-index: 1;
+}
 
 
 .zagreus {
@@ -80,7 +91,7 @@ h1 {
     position: fixed;
     top: 5vh;
     right: 0;
-    color: firebrick;
+    color: hsl(0, 68%, 50%);
     border: 1px solid firebrick;
     background-color: hsl(0, 68%, 15%);
     width: 45%;
